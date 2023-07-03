@@ -2,7 +2,7 @@
 	"type": "module",
 	"name": "@intrnl/bloom-filter",
 	"description": "Bloom filter implementation",
-	"version": "0.2.0",
+	"version": "0.1.0",
 	"author": "intrnl",
 	"license": "MIT",
 	"repository": {
