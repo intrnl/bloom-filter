@@ -107,3 +107,18 @@ export const fromJSON = (json) => {
 		hasher: cyrb53a,
 	};
 };
+
+/**
+ * @param {SerializableBloomFilter} json
+ * @param {import('./hashing.js').Hasher} hasher
+ * @returns {BloomFilter}
+ */
+export const fromJSONCustomHash = (json, hasher) => {
+	return {
+		size: json.s,
+		hashes: json.h,
+		seed: json.e,
+		filter: BitSet.fromJSON(json.f),
+		hasher: hasher,
+	};
+};
