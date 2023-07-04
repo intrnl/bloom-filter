@@ -1,4 +1,6 @@
+.dts/
 node_modules/
+src/*.d.ts
 
 .npm-*.log
 .yarn-*.log

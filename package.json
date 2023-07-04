@@ -12,7 +12,12 @@
 		"src/"
 	],
 	"main": "src/index.js",
+	"scripts": {
+		"prepublishOnly": "esm-d-ts gen src/index.js"
+	},
 	"devDependencies": {
+		"@typhonjs-build-test/esm-d-ts": "^0.0.26",
+		"rollup": "^3.26.0",
 		"tlds": "^1.240.0"
 	}
 }
